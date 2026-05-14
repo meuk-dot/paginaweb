@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | DX Esports</title>
+
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --primary: #8b5cf6;
+            --primary-light: #a855f7;
+            --text: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --card: rgba(255,255,255,0.05);
+            --border: rgba(255,255,255,0.08);
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Segoe UI',sans-serif;
+            background:linear-gradient(180deg,#050507,#0f172a);
+            color:var(--text);
+            min-height:100vh;
+        }
+
+        .navbar{
+            background:#0a0a0f;
+            border-bottom:1px solid var(--border);
+            padding:1rem 0;
+        }
+
+        .nav-container{
+            width:min(1200px,90%);
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            display:flex;
+            align-items:center;
+            gap:1rem;
+        }
+
+        .logo img{
+            width:50px;
+        }
+
+        .nav-links{
+            display:flex;
+            gap:1rem;
+        }
+
+        .nav-links a{
+            color:var(--text-secondary);
+            text-decoration:none;
+            padding:.7rem 1rem;
+            border-radius:999px;
+            transition:.3s;
+        }
+
+        .nav-links a:hover{
+            background:var(--primary);
+            color:white;
+        }
+
+        .hero{
+            text-align:center;
+            padding:5rem 1rem 2rem;
+        }
+
+        .hero h1{
+            font-size:3rem;
+            margin-bottom:1rem;
+        }
+
+        .hero span{
+            color:var(--primary-light);
+        }
+
+        .hero p{
+            color:var(--text-secondary);
+        }
+
+        .contact-box{
+            width:min(700px,90%);
+            margin:2rem auto;
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:24px;
+            padding:3rem;
+        }
+
+        .form-group{
+            display:flex;
+            flex-direction:column;
+            margin-bottom:1.5rem;
+        }
+
+        label{
+            margin-bottom:.5rem;
+            font-weight:600;
+        }
+
+        input,
+        textarea{
+            padding:1rem;
+            border-radius:12px;
+            border:1px solid var(--border);
+            background:rgba(255,255,255,0.03);
+            color:white;
+            font-size:1rem;
+        }
+
+        input:focus,
+        textarea:focus{
+            outline:none;
+            border-color:var(--primary-light);
+        }
+
+        textarea{
+            resize:vertical;
+            min-height:150px;
+        }
+
+        .btn{
+            background:linear-gradient(135deg,var(--primary),var(--primary-light));
+            color:white;
+            border:none;
+            padding:1rem 1.5rem;
+            border-radius:12px;
+            cursor:pointer;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+        }
+
+        .socials{
+            width:min(700px,90%);
+            margin:2rem auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:1rem;
+        }
+
+        .social-card{
+            background:var(--card);
+            border:1px solid var(--border);
+            padding:1.5rem;
+            border-radius:20px;
+            text-align:center;
+        }
+
+        .social-card h3{
+            color:var(--primary-light);
+            margin-bottom:.5rem;
+        }
+
+        .social-card p{
+            color:var(--text-secondary);
+        }
+
+        footer{
+            margin-top:4rem;
+            text-align:center;
+            padding:2rem;
+            border-top:1px solid var(--border);
+            color:var(--text-secondary);
+        }
+
+        @media(max-width:768px){
+
+            .nav-container{
+                flex-direction:column;
+                gap:1rem;
+            }
+
+            .nav-links{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .contact-box{
+                padding:2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            <img src="logo.png" alt="DX Logo">
+            <h2>DX Esports</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="P.P.html">Inicio</a>
+            <a href="P.EQUIPO.html">Equipo</a>
+            <a href="P.CONTACTO.html">Contacto</a>
+        </div>
+
+    </div>
+</nav>
+
+<section class="hero">
+
+    <h1>Contacto <span>DX</span></h1>
+
+    <p>
+        ¿Quieres unirte, colaborar o comunicarte con nosotros?
+    </p>
+
+</section>
+
+<section class="contact-box">
+
+    <form>
+
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre">
+        </div>
+
+        <div class="form-group">
+            <label>Correo</label>
+            <input type="email" placeholder="tu@email.com">
+        </div>
+
+        <div class="form-group">
+            <label>Mensaje</label>
+            <textarea placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+
+        <button class="btn" type="submit">
+            Enviar Mensaje
+        </button>
+
+    </form>
+
+</section>
+
+<section class="socials">
+
+    <div class="social-card">
+        <h3>Discord</h3>
+        <p>discord.gg/dx</p>
+    </div>
+
+    <div class="social-card">
+        <h3>Instagram</h3>
+        <p>@dx.esports</p>
+    </div>
+
+    <div class="social-card">
+        <h3>Email</h3>
+        <p>contacto@dxesports.com</p>
+    </div>
+
+</section>
+
+<footer>
+    DX (Degeneration X) © 2027 - Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
