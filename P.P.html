@@ -41,9 +41,7 @@
             color:inherit;
         }
 
-        /* =========================
-           NAVBAR
-        ========================= */
+        /*NAV*/
 
         .navbar{
             position:sticky;
@@ -96,10 +94,7 @@
             color:white;
         }
 
-        /* =========================
-           HERO
-        ========================= */
-
+        /*HERO*/
         .hero{
             width:min(1200px,90%);
             margin:auto;
@@ -184,9 +179,7 @@
             }
         }
 
-        /* =========================
-           INFO SECTION
-        ========================= */
+        /* Info seccion */
 
         .section{
             width:min(1200px,90%);
@@ -236,9 +229,7 @@
             line-height:1.7;
         }
 
-        /* =========================
-           CTA
-        ========================= */
+        /*CTA*/
 
         .cta{
             width:min(1000px,90%);
@@ -261,9 +252,7 @@
             line-height:1.8;
         }
 
-        /* =========================
-           FOOTER
-        ========================= */
+        /*FOOTER */
 
         footer{
             margin-top:5rem;
@@ -273,9 +262,7 @@
             color:var(--text-secondary);
         }
 
-        /* =========================
-           RESPONSIVE
-        ========================= */
+        /* RESPONSIVE*/
 
         @media(max-width:900px){
 
@@ -307,16 +294,11 @@
 </head>
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================= -->
-
     <nav class="navbar">
 
         <div class="nav-container">
 
             <div class="logo">
-                <!-- CAMBIA logo.png POR TU LOGO -->
                 <img src="logo2.png" alt="DX Logo">
 
                 <h2>
@@ -334,17 +316,13 @@
 
     </nav>
 
-    <!-- =========================
-         HERO
-    ========================= -->
-
     <section class="hero">
 
         <div class="hero-text">
 
             <h1>
-                Reclutamiento<br>
-                <span>DX</span> Degeneration X
+            <br>
+                <span>Degeneration </span> X
             </h1>
 
             <p>
@@ -369,16 +347,11 @@
 
         <div class="hero-image">
 
-            <!-- CAMBIA POR TU LOGO -->
             <img src="logo2.png" alt="DX Esports">
 
         </div>
 
     </section>
-
-    <!-- =========================
-         INFO SECTION
-    ========================= -->
 
     <section class="section">
 
@@ -395,45 +368,80 @@
         <div class="cards">
 
             <div class="card">
-
                 <h3>Competitividad</h3>
-
                 <p>
                     Queremos jugadores con hambre de mejorar,
                     competir y dominar dentro del juego.
                 </p>
-
             </div>
 
             <div class="card">
-
                 <h3>Trabajo en Equipo</h3>
-
                 <p>
                     La comunicación y la coordinación son
                     fundamentales dentro de DX.
                 </p>
-
             </div>
 
             <div class="card">
-
                 <h3>Disciplina</h3>
-
                 <p>
                     La constancia y el compromiso son la base
                     del crecimiento competitivo.
                 </p>
-
             </div>
 
         </div>
 
     </section>
 
-    <!-- =========================
-         CTA
-    ========================= -->
+    <section class="section" id="juegos">
+        
+        <div class="section-title">
+            <h2>Nuestras Divisiones</h2>
+            <p>Conoce los juegos en los que competimos actualmente.</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card" id="free-fire">
+                <h3>Free Fire</h3>
+                <p>El popular Battle Royale para móviles. Sobrevive y domina en partidas frenéticas.</p>
+                <br>
+                <a href="P.CONTACTO.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.7rem 1.2rem;">Postular a FF</a>
+            </div>
+
+            <div class="card" id="cod-mobile">
+                <h3>Call of Duty Mobile</h3>
+                <p>Acción multijugador y Battle Royale táctico. Buscamos a los mejores tiradores.</p>
+                <br>
+                <a href="P.CONTACTO.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.7rem 1.2rem;">Postular a CODM</a>
+            </div>
+
+            <div class="card" id="fc-mobile">
+                <h3>FC Mobile</h3>
+                <p>Construye, compite y gana. Reclutamos expertos en el simulador de fútbol móvil.</p>
+                <br>
+                <a href="P.CONTACTO.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.7rem 1.2rem;">Postular a FC</a>
+            </div>
+
+            <div class="card" id="cs2">
+                <h3>Counter Strike 2</h3>
+                <p>La máxima evolución del shooter competitivo en PC. Solo para jugadores tácticos.</p>
+                <br>
+                <a href="P.CONTACTO.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.7rem 1.2rem;">Postular a CS2</a>
+            </div>
+
+            <div class="card" id="RSSX">
+                <h3> Rainbow Six Siege X</h3>
+                <p>El shooter táctico por excelencia. Buscamos estrategas y jugadores con visión de juego.</p>
+                <br>
+                <a href="P.CONTACTO.html" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.7rem 1.2rem;">Postular a R6S</a>
+            </div>
+
+        </div>
+
+    </section>
 
     <section class="cta">
 
@@ -444,19 +452,15 @@
             tu nivel en el competitivo.
         </p>
 
-        <a href="contacto.html" class="btn btn-primary">
+        <a href="P.CONTACTO.html" class="btn btn-primary">
             Contactar al Equipo
         </a>
 
     </section>
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
     <footer>
 
-        DX (Degeneration X) © 2027 - Todos los derechos reservados.
+        DX (Degeneration X) © 2027 - Todos los derechos reservados - Cualquier reclamo a las redes sociales por privado.
 
     </footer>
 
