@@ -54,8 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. ANIMACIÓN DE ENTRADA INTELIGENTE AL HACER SCROLL (INTERSECTION OBSERVER)
-    // Sustituye las animaciones CSS por defecto basadas en timelines experimentales,
-    // garantizando soporte cross-browser impecable para la aparición gradual de secciones.
     const observerOptions = {
         root: null,
         threshold: 0.15
